@@ -4,7 +4,7 @@ const ip = require('ip');
 const app = express();
 
 app.get('/', (req, res) => {
-    const serverIp = ip.address();
+    const serverIp = ip.address();   //This will give use the Ip Address
     return res.json({
         ping: 'Pong',
         message: serverIp
